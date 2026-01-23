@@ -34,7 +34,7 @@ public class SobreescribirFichero {
 			personaOStream.writeObject(new Persona("Pepe", "Botella", 100));
 			personaOStream.writeObject(new Persona("Pepe2", "Botell2", 1002));
 
-		} catch (IOException e) {
+		} catch (Exception e) {
 		    System.out.println("Error de escritura: " + e.getMessage());
 		}
 		

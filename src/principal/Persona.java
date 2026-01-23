@@ -5,9 +5,16 @@ import java.io.Serializable;
 public  class Persona implements Serializable{ 
 
     /**
-	 * serialVersionUID - se almacena en la posicion 33 (empezando en 1)
+	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+
+
+
+	/**
+	 * serialVersionUID - se almacena en la posicion 33 (empezando en 1)
+	 */
+//	private static final long serialVersionUID = 1L;
 
 
 

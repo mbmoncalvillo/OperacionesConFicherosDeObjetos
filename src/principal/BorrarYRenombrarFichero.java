@@ -30,7 +30,7 @@ public class BorrarYRenombrarFichero {
 		    	// Borra el fichero	de backup
 				try {
 					Files.deleteIfExists(Paths.get("personas.backup"));
-					System.out.println("Fichero borrado");
+					
 				} catch (IOException e) {
 					System.out.println("Error al borrar el fichero de backup: "+e.getMessage());
 				}

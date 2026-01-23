@@ -28,18 +28,16 @@ public class LeerFichero {
 			try (FileInputStream fileIStream = new FileInputStream(refFichero);
 		             ObjectInputStream personaIStream = new ObjectInputStream(fileIStream)) 
 			{
-				try 
+				while (true)
 				{
-					while (true)
-					{
 						Persona aux = (Persona) personaIStream.readObject();
 						System.out.println(aux);
-					}
-				
-				} catch (EOFException eof) 
-				{			 
+					
 				}
-
+			}
+			catch (EOFException eof) 
+			{			 
+				
 			} catch (Exception e) 
 			{
 				System.out.println("Error de lectura: "+e.getMessage());
